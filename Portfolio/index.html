@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Aritra</title>
+    <!--CSS Files-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- due to this imported pre define library from cdn.js we are able to use those icons , symbols without creating them -->
+
+    <!--Style Switcher--> 
+    <!--Different colour css which will be triggered with js-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <!--Fav ICon-->
+    <link rel="icon" href="favicon-16x16.png">
+</head>
+<body >
+    <!--Main Container Start-->
+    <div class="main-container">
+
+        <!--Aside Start-->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>H</span>ola</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <!--using the section ids to link with the nav bar-->
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i>Skills</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!--Aside End-->
+        
+        <!--Main Content Start-->
+        <div class="main-content">
+                <!--Home Section Start-->
+                <section class="home active section " id="home"> 
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="hello">
+                            Hello, my name is <span class="name">Aritra Basak</span>
+                        </h3>
+                        <h3 class="my-profession">I'm a/an <span class="typing">Web developer</span></h3>
+                        <p>I'm a Full Stack Web Developer with extensive experience in blending the art of design with programming skills to deliver an immersive and engaging user experience through efficient website development. My expertise is to create, design and develop websites, and many more...</p>
+                        
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="images/PicsArt_02-26-09.24.08.jpg" alt="">
+                    </div>
+                    <div class="footer" >
+                        <span>&copy; Aritra || All rights reserved.</span> 
+                    </div>
+                        <!--&copy; will print the copyright symbol in the page-->
+                </div>
+            </div>
+                </section>
+                <!--Home Section End-->
+                
+                <!--About Section Start-->
+                <section class="about section " id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>
+                                    I'm <span>Aritra Basak</span>
+                                </h3>
+                                <p>I am a Self-taught Web Developer and a Java Programmer with a 5-Star HackerRank Rating. A Spring Developer passionate about crafting efficient and robust code for scalable applications. Born and raised in Kolkata. I eat. I sleep. I write code and improve my design and skills every day. Currently working in EY. And a firm believer in learning through experience.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="personal-info padd-15">
+                            <div class="row">
+                                <div class="info-item padd-15">
+                                    <p>Birthday : <span>07 December 2000</span></p>
+                                </div>
+                                <div class="info-item padd-15">
+                                    <p>Linkedin : <span><a href="https://www.linkedin.com/in/aritra-basak-java-web-dev" target="_blank">Connect</a></span></p>
+                                </div>
+                                <div class="info-item padd-15">
+                                    <p>E-Mail : <span>basakaritra10@gmail.com</span></p>
+                                </div>
+                                <div class="info-item padd-15">
+                                    <p>Phone : <span>9836610724</span></p>
+                                </div>
+                                <div class="info-item padd-15">
+                                    <p>City : <span>Kolkata</span></p>
+                                </div>
+                                <div class="info-item padd-15">
+                                    <p>Work : <span>Technology Consultant in Ey</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="buttons padd-15">
+                                    <a href="https://drive.google.com/file/d/1Dqzx3aGg2CjOYFhtlzz77IIirvnwUdRo/view?usp=sharing" target ="_blank" class="btn">Download Resume</a>
+                                    <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                    <a href="https://github.com/Aritra-Basak" target="_blank"  class="btn hire-me">Git Hub</a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <div class="skill-item padd-15">
+                                        <h5>Java</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 60%"></div>
+                                            <div class="skill-percent">60%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Web Designing</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 80%"></div>
+                                            <div class="skill-percent">80%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>DBMS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 65%"></div>
+                                            <div class="skill-percent">65%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Spring Boot</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 55%"></div>
+                                            <div class="skill-percent">55%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="education padd-15">
+                                <h3 class="title">Education :</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <!--timeline items-->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class=" fa fa-calendar"></i>2019-2023
+                                                </h3>
+                                                <h4 class="timeline-title">Bachelor of Technology in ECE </h4>
+                                                <p class="timeline-text">Pursued Bachelor's of Technology degree in Electronics and Communication Engineering with an average of 9.0 cgpa. I am a fresher and I don't have much practical knowledge but I am eager to learn new things.</p>
+                                            </div>
+                                            <!--timeline items-->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class=" fa fa-calendar"></i>2006-2019
+                                                </h3>
+                                                <h4 class="timeline-title">School</h4>
+                                                <p class="timeline-text">Coming to my educational qualification, I have completed my schooling from Julien Day. I have passed both Secondary (Class 10) and Higher Secondary (Class 12) in 2017 and 2019 respectively from Julien Day. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience padd-15">
+                                <h3 class="title">Experience :</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                                <!--timeline items-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class=" fa fa-calendar"></i>2023-....
+                                                    </h3>
+                                                    <h4 class="timeline-title">Organiztion</h4>
+                                                    <p class="timeline-text"><b>Senior Analyst in Technology Consultant</b>,<b>EY</b>
+                                                    <br>
+                                                    Highly skilled Full Stack Java Developer with a strong specialization in Spring Framework. Equipped with extensive experience in designing, developing, and implementing robust and scalable web applications.
+                                                </p>      
+                                                </div>
+                                            <!--timeline items-->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class=" fa fa-calendar"></i>2020-2023
+                                                </h3>
+                                                <h4 class="timeline-title">Internships/Trainings</h4>
+                                                <p class="timeline-text">1. Technology Consultant Intern,<b>EY</b>.
+                                                                            <br>
+                                                                            <i>February 2023 - July 2023</i>
+                                                                            <br>
+                                                                        2. Cloud Computing in Microsoft Azure from <b>ESL Technologies</b>.
+                                                                            <br>
+                                                                            <i>Jun 2021 - Jul 2021.</i>
+                                                    </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </section>
+                <!--About Section End-->
+                
+                <!--Skills Section Start-->
+                <section class="service section " id ="service">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Skills in My Arsenal</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Skills item start-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <h4>Web Development</h4>
+                            <p>A self-taught and independent Front End Developer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <p>A seasoned Java programmer with a 5-Star rating in Hackerank.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <p>Also, got the knowledge and good hands-on Python programming.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <h4>Spring</h4>
+                            <p> Learning and implementing backend solutions with the use of Spring.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <h4>DBMS</h4>
+                            <p>Familiar with the knowledge of Data Base Management System(DBMS) .</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <h4>Bootstrap</h4>
+                            <p>Also, know how to use the Bootstrap as a framework for CSS.</p>
+                        </div>
+                    </div>
+                    <!--Skills item end-->
+                </div>
+            </div>
+                </section>
+                <!--Skills Section End-->
+                
+                <!--Project Section Start-->
+                <section class="portfolio section " id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-heading padd-15">
+                        <h2>Some of My Projects :</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Projects item Starts-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <a href="https://github.com/Aritra-Basak/Spring_Boot_Projects/tree/main" target="_blank"><img src="images/Projects/Project1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <a href="https://aritra-basak.github.io/Nike_Product_Card/Hovering-Effect/index.html" target="_blank"><img src="images/Projects/Project2.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <a href="https://aritra-basak.github.io/Gym-Site/Gym_Page/me/GYM_Page.html" target="_blank"> <img src="images/Projects/Project3.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <a href="https://github.com/Aritra-Basak/Weather-App" target="_blank"> <img src="images/Projects/Project4.png" alt=""> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <a href="https://github.com/Aritra-Basak/Doctor-Appointment" target="_blank"> <img src="images/Projects/Project5.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <a href="https://github.com/Aritra-Basak/React-To-Do-List" target="_blank"> <img src="images/Projects/Project6.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="write padd-15">
+                        <div class="hover-text">And many more...
+                            <span class="tooltip-text bottom">
+                                <div class="buttons padd-15">
+                                    <a href="https://github.com/Aritra-Basak?tab=repositories" target="_blank"  class="btn hire-me">Git Hub</a>
+                                </div>
+
+                            </span>
+                        </div>
+                    </div>
+                    <!--Projects item Ends-->
+                    
+                </div>
+            </div>
+                </section>
+                <!--Project Section end-->
+                
+                <!--Contact Section Start-->
+                <section class="contact section" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Contact Me</h2>
+                            </div>
+                        </div>
+                        <h3 class="contact-title padd-15">" Have Any Questions ? "</h3>
+                        <h4 class="contact-sub-title padd-15">" Connect With Me. "</h4>
+                        <div class="row">
+                            <!--Contact Info item start-->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <h4>Call Me On</h4>
+                                <p>9836610724</p>
+                            </div>
+                            <div class="contact-info-item padd-15">
+                                <div class="icon">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                </div>
+                                <h4>Home</h4>
+                                <p>Kolkata</p>
+                            </div>
+                            <div class="contact-info-item padd-15">
+                                <div class="icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <h4>E-Mail</h4>
+                                <p>basakaritra10@gmail.com</p>
+                            </div>
+                            <div class="contact-info-item padd-15">
+                                <div class="icon">
+                                    <i class="fa fa-globe-asia"></i>
+                                </div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/aritra-basak-java-web-dev" target="_blank">Connect</a></p>
+                            </div>
+                            <!--Contact Info item end-->
+                        </div>
+                        <h3 class="contact-title padd-15">SEND ME AN E-MAIL.</h3>
+                        <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                        <!--Contact Form-->
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="nameofSender"  placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" readonly id="emailID" value="basakaritra10@gmail.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subjectInput"  placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="" class="form-control" id="bodyInput" placeholder="Messages"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                       <button id="mailsubmitbtn" onclick="openGmailCompose()">
+                                              <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <span>Send</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <ul class="social-network">
+                                <li><a href="https://mobile.twitter.com/im_aritra10" target="blank"><img src="images/Social-Media/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" width = "29"></a></li>
+                                <li><a href ="https://www.facebook.com/ARITRA.paradox" target = blank><img src= "images/Social-Media/facebook-logo-circle-transparent.png" width = "29"></a></li>
+                                <li><a href="https://www.instagram.com/the_chemical_cocktail" target="blank"><img src="images/Social-Media/instagram-logo-gradient-transparent.png" width="29"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--Contact Section End-->
+                
+        </div>
+        <!--Main Content Start-->
+        
+        
+    </div>
+    <!--Main Container End-->
+    <!--Style Switcher Start-->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colours</h4>
+        <div class="colors">
+            <!--when click event is used then with respective classes respective colour css will be triggered-->
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!--Style Switcher End-->
+
+    <!--JS Files-->
+    <!--For Typing Animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <!--Main Js File-->
+    <script src="js/script.js"></script>
+    <!--Js for Style Switcher-->
+    <script src="js/style-switcher.js"></script>
+</body>
+</html>
