@@ -594,6 +594,10 @@ h3.my-profession
 {
     color: var(--text-black-700);
 }
+.connect_button
+{
+     color: var(--skin-color);
+}
 /*Skills*/
 .service .container
 {
