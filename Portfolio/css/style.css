@@ -3,29 +3,32 @@
 {
     /*initializing variables, left sides are the variables with values initialized at right*/
     /*variavles used for dark theme as default*/
+    --bg-image: url('../images/dark_image.jpg');
     --bg-black-900:#151515; 
     --bg-black-100:#222222;
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
     --b-shadow:rgba(214, 213, 226, 0.15);
+    --b-navbar:rgba(24, 24, 24, 0.8)
 }
 body.light
 {
     /*variables for light theme*/
+    --bg-image: url('../images/light_image.jpg');
     --bg-black-900:#f2f2fc; 
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
     --b-shadow:rgba(1, 1, 2, 0.15);
+    --b-navbar:rgba(222,216,216.0.8)
 }
 body
 {
-
+    font-family:'Poppins' sans-serif ;
     line-height: 1.5;
     font-size: 16px;
-    font-family:'Poppins' sans-serif ;
 }
 * /* CSS reset*/
 {
@@ -45,7 +48,10 @@ ul
 }
 .section
 {
-    background: var(--bg-black-900);
+    background: var(--bg-image);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: block;
     padding: 0 30px;
@@ -100,6 +106,8 @@ ul
 {
     padding-top: 60px;
     padding-bottom: 70px;
+    padding-bottom: 70px;
+    margin-left: 270px;
 }
 .section-title
 {
@@ -170,7 +178,7 @@ ul
 .aside
 {
     width: 270px;
-    background: var(--bg-black-100);
+    background: var( --b-navbar);
     position: fixed;
     left: 0;
     top:0;
@@ -198,6 +206,7 @@ ul
     font-size: 30px;
     letter-spacing: 5px;
     position: relative;
+    text-decoration: none;
 }
 .aside .logo a span
 {
@@ -236,7 +245,7 @@ ul
     left:300px;
     top:20px;
     border-radius:5px;
-    background: var(--bg-black-100);
+    background:var( --b-navbar);
     display: none;
     align-items: center;
     justify-content: center;
@@ -289,14 +298,24 @@ ul
     margin-bottom: 20px;
     display:block;
 }
-.aside .nav li a
-{
+.aside .nav li a {
     font-size: 16px;
     font-weight: 600;
     display: block;
     color: var(--text-black-900);
     padding: 5px 15px;
-    border-bottom: 1px solid var(--bg-black-50);
+    /* border-bottom: 1px solid var(--bg-black-50); */
+    transition: 0.4s ease;
+    border-radius: 12px;
+    margin-bottom: 1.08rem;
+    text-decoration: none;
+    box-shadow: #9d9b9e42 1.95px 1.95px 2.6px;
+}
+
+.aside .nav li :hover {
+    background-color: var(--bg-black-50);
+    transition: 0.55s ease;
+    border-radius: 12px;
 }
 .aside .nav li a.active
 {
@@ -334,8 +353,8 @@ h3.hello
 }
 h3.hello span
 {
-    font-family: 'Clicker Script' , cursive;
-    font-size: 30px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 40px;
     font-weight: 700;
     color: var(--skin-color);
 }
@@ -928,17 +947,20 @@ h3.my-profession
 }
 .footer 
 {
-    position: fixed;
-    bottom: 10px;
-    left: 890px;
-    font-size: 10px;
+text-align: center;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+padding: 10px 0;
 }
 /*Creating Responsiveness with media queries*/
-@media (max-width:1199px) and (min-width:991px) /*when width is below 1199px*/
+@media (max-width:1600px) and (min-width:930px) /*when width is below 1600px*/
 {
     .section .container
     {
         padding-top: 70px;
+        padding-bottom: 70px;
     }
     .aside
     {
@@ -960,22 +982,43 @@ h3.my-profession
     .section
     {
         left:0;
-    }
-    
+    } 
     .about .about-content .personal-info .info-item p span 
     {
         display: block;
         margin-left: 0;
     }
-    .footer 
+    .home-img::before 
     {
-    position: fixed;
-    bottom: 10px;
-    left: 488px;
-    font-size: 10px;
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        left: 24px;
+        top: -40px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
     }
+    .home-img::after
+    {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        right: 20px;
+        bottom: -40px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+    }
+    .home .home-img img
+    {
+        margin: auto;
+        border-radius:5px ;
+        height: 400px;
+    }
+
 }
-@media (max-width:991px) and (min-width:767px)
+@media (max-width:930px) and (min-width:800px)
 {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -987,7 +1030,7 @@ h3.my-profession
     
     .home .home-info
     {
-        flex: 0 0 100%;
+        /* flex: 0 0 100%; */
         max-width: 100%;
     }
     .section .container
@@ -1021,34 +1064,36 @@ h3.my-profession
     }
     .home .home-img img
     {
+        height: 315px;
+    }
+    .home-img::before {
+        content: "";
         position: absolute;
-        bottom: 348px;
-        left: 296px;
-        height: 215px;
+        height: 80px;
+        width: 80px;
+        left: 24px;
+        top: -28px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
     }
-    .home-img::before 
-    {
-        display: none;
-    }
-    
-    .home-img::after
-    {
-        display: none;
+    .home-img::after {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        right: 20px;
+        bottom: 79px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
     }
     .social ul
     {
         display: flex;
         justify-content: center;
     }
-    .footer 
-    {
-    position: fixed;
-    bottom: 10px;
-    left: 389px;
-    font-size: 10px;
-    } 
+
 }
-@media (max-width:767px)  and (min-width:460px)
+@media (max-width:800px)  and (min-width:750px)
 {   
     .contact .contact-form .col-6,
     .contact .contact-info-item,
@@ -1096,19 +1141,28 @@ h3.my-profession
     }
     .home .home-img img
     {
-        position: absolute;
-        bottom: 303px;
-        left: -105px;
-        height: 145px;
-    }    
-    .home-img::before 
-    {
-        display: none;
+        height:258px;
     }
-    
-    .home-img::after
-    {
-        display: none;
+    .home-img::before {
+
+        content: "";
+        position: absolute;
+        height: 66px;
+        width: 72px;
+        left: 35px;
+        top: -28px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
+    }
+    .home-img::after {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        right: 32px;
+        bottom: -2px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
     }
     h3.my-profession
 {
@@ -1121,15 +1175,93 @@ h3.my-profession
     font-size: 10px;
     color:var(--text-black-700);
 }
-.footer 
+
+} 
+@media (max-width:750px)  and (min-width:726px)
+{   
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .about .about-content .skills,
+    .about .about-content .personal-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+    }
+    .section .container
+    {
+        padding-top: 70px;
+    }
+    .aside
+    {
+        left: -270px;
+    }
+    .aside.open 
+    {
+        left: 0;
+        
+    }
+    .aside .nav-toggler
+    {
+        display: flex;
+        left:30px;
+    }
+    .aside .nav-toggler.open 
+    {
+        left: 300px;
+        
+    }
+    .section
+    {
+        left:0;
+    }
+    .section.open
+    {
+        left: 270px;
+    }
+    .home .home-img img
+    {
+        height:258px;
+    }
+    .home-img::before {
+
+        content: "";
+        position: absolute;
+        height: 66px;
+        width: 72px;
+        left: 27px;
+        top: -23px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
+    }
+    .home-img::after {
+        content: "";
+        position: absolute;
+        height: 66px;
+        width: 72px;
+        right: 24px;
+        bottom: -2px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+    }
+    h3.my-profession
 {
-position: fixed;
-bottom: 10px;
-left: 285px;
-font-size: 10px;
+    font-size: 15px;
+    margin: 10px 0;
+}
+.home-info p
+{
+    margin-bottom: 70px;
+    font-size: 10px;
+    color:var(--text-black-700);
+}
+
 } 
-} 
-@media (max-width:460px)
+@media (max-width:726px)
 {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
@@ -1173,12 +1305,30 @@ font-size: 10px;
     {
         left: 270px;
     }
+    .home .home-info
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex: 0 0 100%;
+    position: absolute;
+    top: 49%;
+    }
+    .home .home-img
+    {
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 100%;
+       flex:0 0 100%
+    }
     .home .home-img img
     {
+        height: 300px;
         position: absolute;
-        bottom: 338px;
-        left: -202px;
-        height: 135px;
+        bottom:77px
     }
     .home-img::before 
     {
@@ -1205,13 +1355,7 @@ font-size: 10px;
     font-size: 18px;
     margin: 15px 0;
     }
-    .footer 
-    {
-    position: fixed;
-    bottom: 10px;
-    left: 127px;
-    font-size: 10px;
-    } 
+
     .style-switcher .s-icon i .fa-spin
     {
         animation-name: rotation ;
@@ -1238,30 +1382,12 @@ font-size: 10px;
     }
     }
     .about .about-content .personal-info .info-item p
-{
-    font-weight: 600;
-    padding: 10px 0;
-    font-size: 10px;
-    color: var(--text-black-900);
-    border-bottom: 1px solid var(--bg-black-50);
-}
-}
-@media (max-height:745px)
-{
-    .home .home-img img
     {
-        position: absolute;
-        bottom: 338px;
-        left: -83px;
-        height: 135px;
-    }
-    .home-img::before 
-    {
-        display: none;
-    }
-    
-    .home-img::after
-    {
-        display: none;
+        font-weight: 600;
+        padding: 10px 0;
+        font-size: 10px;
+        color: var(--text-black-900);
+        border-bottom: 1px solid var(--bg-black-50);
     }
 }
+
