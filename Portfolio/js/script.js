@@ -1,32 +1,32 @@
 // Function to disable right-click context menu
-// function disableRightClick(event) {
-//     alert('Right Click is disabled');
-//     event.preventDefault(); // Prevent default right-click behavior
-//     return false;
-// }
+function disableRightClick(event) {
+    alert('Right Click is disabled');
+    event.preventDefault(); // Prevent default right-click behavior
+    return false;
+}
 
-// // Function to disable Ctrl+U (View Page Source) and F12 (Developer Tools)
-// function disableKeysAndF12(event) {
-//     if (event.ctrlKey && event.key === 'u') {
-//         alert('Ctrl+U is disabled');
-//         event.preventDefault(); // Prevent default Ctrl+U behavior\
-//         return false;
-//     }
+// Function to disable Ctrl+U (View Page Source) and F12 (Developer Tools)
+function disableKeysAndF12(event) {
+    if (event.ctrlKey && event.key === 'u') {
+        alert('Ctrl+U is disabled');
+        event.preventDefault(); // Prevent default Ctrl+U behavior\
+        return false;
+    }
     
-//     if (event.key === 'F12') {
-//         alert('F12 is disabled');
-//         event.preventDefault(); // Prevent default F12 behavior
-//         return false;
-//     }
-// }
+    if (event.key === 'F12') {
+        alert('F12 is disabled');
+        event.preventDefault(); // Prevent default F12 behavior
+        return false;
+    }
+}
 
-// // Attach the disableRightClick function to the contextmenu event
-// //document: This refers to the entire HTML document.
-// //'contextmenu': This is the type of event being listened for. It specifically refers to the right-click context menu event.
-// document.addEventListener('contextmenu', disableRightClick);
+// Attach the disableRightClick function to the contextmenu event
+//document: This refers to the entire HTML document.
+//'contextmenu': This is the type of event being listened for. It specifically refers to the right-click context menu event.
+document.addEventListener('contextmenu', disableRightClick);
 
-// // Attach the disableKeysAndF12 function to the keydown event
-// document.addEventListener('keydown', disableKeysAndF12);
+// Attach the disableKeysAndF12 function to the keydown event
+document.addEventListener('keydown', disableKeysAndF12);
 
 
 // Typing Animations
