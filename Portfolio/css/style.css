@@ -63,6 +63,7 @@ ul {
 .section.back-section {
   z-index: 1;
 }
+/*Section Switch Animation*/
 .section.active {
   z-index: 2;
   opacity: 1;
@@ -603,11 +604,43 @@ h3.my-profession {
   overflow: hidden;
   cursor: pointer;
 }
-.portfolio .portfolio-item-inner .portfolio-img img {
+/* .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
 }
 .portfolio-item .portfolio-item-inner:hover {
+  box-shadow: 0 0 20px var(--b-shadow);
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+} */
+
+portfolio .portfolio-item-inner .portfolio-img {
+  position: relative;
+}
+
+.portfolio .portfolio-item-inner .description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Translucent background */
+  padding: 10px;
+  color: white;
+  display: none; /* Initially hidden */
+  transition-duration: 0.5s; /* Same duration as the image scaling */
+  transition-timing-function: ease;
+}
+
+.portfolio .portfolio-item-inner:hover .description {
+  display: block; /* Display on hover */
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio .portfolio-item-inner:hover {
   box-shadow: 0 0 20px var(--b-shadow);
   transform: scale(1.5);
   transition-duration: 0.5s;
